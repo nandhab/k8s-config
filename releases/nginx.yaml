@@ -2,7 +2,7 @@
 apiVersion: helm.fluxcd.io/v1
 kind: HelmRelease
 metadata:
-  name: mywebserver
+  name: mywebserver1
   namespace: nginx1
   annotations:
     flux.weave.works/automated: "true"
@@ -11,7 +11,7 @@ metadata:
     flux.weave.works/locked_msg: '"Halt updates for now"'
     flux.weave.works/locked_user: User Name <user@example.com>
 spec:
-  releaseName: mywebserver
+  releaseName: mywebserver1
   chart:
     repository: https://charts.bitnami.com/bitnami/
     name: nginx
